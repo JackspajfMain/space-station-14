@@ -188,9 +188,14 @@
     angle: 0
     animation: WeaponArcThrust
     wideAnimationRotation: 90
+    soundHit:
+      collection: AlienClaw
   - type: Item
     size: Small
     sprite: Objects/Fun/Foam/foam_blade.rsi
+  - type: EmitSoundOnPickup
+    sound:
+      collection: gib # Placeholder, change whenever changeling.yml armblade sfx changes
 
 - type: entity
   parent: [ BaseItem, BaseToySword ]
