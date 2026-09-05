@@ -615,7 +615,7 @@
 - type: entity
   parent: [ClothingMaskClownBase, BaseFoldable]
   id: ClothingMaskBlushingClown
-  name: blushing clown mask
+  name: blushing clown wig and mask
   description: A mask for a blushing clown.
   components:
   - type: Sprite
