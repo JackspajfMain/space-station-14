@@ -188,7 +188,7 @@
     price: 30 # increases in price after decomposed into raw materials
 
 - type: entity
-  parent: ClothingMaskBase
+  parent: [ClothingMaskBase, BaseFoldable]
   id: ClothingMaskClownBase
   abstract: true
   name: clown wig and mask
@@ -199,7 +199,6 @@
   - type: FoldableClothing
     foldedEquippedPrefix: opened
     foldedHeldPrefix: opened
-  - type: Appearance
   - type: Sprite
     sprite: Clothing/Mask/clown.rsi
     layers:
@@ -222,7 +221,7 @@
     - Snout
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseFoldable]
+  parent: ClothingMaskClownBase
   id: ClothingMaskClown
   description: A clown mask featuring a foldable wig; a true prankster's attire.
   components:
@@ -230,7 +229,7 @@
     sprite: Clothing/Mask/clown.rsi
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseFoldable]
+  parent: ClothingMaskClownBase
   id: ClothingMaskClownBanana
   name: banana clown wig and mask
   components:
@@ -243,7 +242,7 @@
     node: mask
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseSecurityContraband, BaseFoldable]
+  parent: [ClothingMaskClownBase, BaseSecurityContraband]
   id: ClothingMaskClownSecurity
   name: security clown wig and mask
   description: A debatably oxymoronic but protective mask and wig.
@@ -359,7 +358,7 @@
     hideOnToggle: true
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseFoldable]
+  parent: ClothingMaskClownBase
   id: ClothingMaskCluwne
   name: cluwne face and hair
   suffix: Unremoveable
@@ -613,7 +612,7 @@
     sprite: Clothing/Mask/neckgaiterred.rsi
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseFoldable]
+  parent: ClothingMaskClownBase
   id: ClothingMaskBlushingClown
   name: blushing clown wig and mask
   description: A mask for a blushing clown.
